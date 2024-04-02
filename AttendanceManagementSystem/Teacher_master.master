@@ -1,0 +1,69 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Teacher_master.master.cs" Inherits="Teacher_master" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+     <table align="center" class="style1" width="100%">
+            <tr>
+                <td colspan="6" align="center" class="style2" height="100px" bgcolor="#00AC9C">
+                    <strong style="font-family:Baskerville Old Face; color:White;  font-size: xx-large">&nbsp;&nbsp;&nbsp; Attendance Managment System</strong></td>
+               
+            </tr>
+           
+            <tr align="center">
+                  <td class="style4" bgcolor="Transparent" 
+                style=" border-collapse: collapse">
+                <asp:Button ID="course" runat="server" Height="40px" Text="Home" 
+                    Width="140px"  CausesValidation="False" 
+                    Font-Bold="True" ForeColor="Maroon" PostBackUrl="~/Teacher_homepage.aspx" />
+            </td>
+            <td class="style4" bgcolor="Transparent" 
+                style=" border-collapse: collapse">
+                <asp:Button ID="Subject" runat="server" Height="40px" Text="Mark Attendance" 
+                    Width="140px" CausesValidation="False" 
+                    Font-Bold="True" ForeColor="Maroon" PostBackUrl="~/Mark_attendance.aspx" />
+            </td>
+            <td class="style4" bgcolor="Transparent" 
+                style=" border-collapse: collapse">
+                <asp:Button ID="Teachers" runat="server" Height="40px" Text="Lacture Taken" 
+                    Width="140px" CausesValidation="False" 
+                    Font-Bold="True" ForeColor="Maroon" PostBackUrl="~/Lecture_Taken.aspx" />
+            </td>
+
+            <td class="style4" bgcolor="Transparent" 
+                style=" border-collapse: collapse">
+                <asp:Button ID="log_out" runat="server" Height="40px" 
+                    Text="Log Out" Width="140px" CausesValidation="False" Font-Bold="True" 
+                    ForeColor="Maroon" PostBackUrl="~/Admin_Staff_Login.aspx" />
+            </td>
+            </tr>
+            <tr>
+                <td colspan="6" class="style3">
+               
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+
+                    </asp:ContentPlaceHolder>
+                    </td>
+               
+            </tr>
+            
+            <tr>
+                <td colspan="6" align="center" height="50px" 
+                    bgcolor="#00AC9C" style="font-family:Baskerville Old Face; font-weight:bold; color:White"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &copy Attendance Management System
+
+                    &nbsp;</td>
+              
+            </tr>
+        </table>
+    </div>
+    </form>
+</body>
+</html>
